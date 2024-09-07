@@ -90,7 +90,7 @@ button:hover {
 /* Desktop-responsive adjustments */
 @media (min-width: 601px) {
     .resume {
-        max-width: 700px; /* Slightly larger on bigger screens */
+        max-width: 800px; /* Slightly larger on bigger screens */
     }
 
     h1 {
