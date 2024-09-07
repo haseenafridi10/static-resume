@@ -1,0 +1,107 @@
+/* Base styles for the entire resume */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* The container for the resume */
+.resume {
+    background-color: white;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Header section styling */
+#personal-info {
+    text-align: center; /* Center-align personal info on all screens */
+    margin-bottom: 20px;
+}
+
+/* Profile picture styling */
+#profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Styling for headings */
+h1, h2 {
+    color: #333;
+}
+
+/* Styling for education, skills, and work experience */
+section {
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+button {
+    display: block;
+    width: 100%; /* Full width button for better mobile usability */
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile-responsive adjustments */
+@media (max-width: 600px) {
+    .resume {
+        width: 95%; /* Adjust width on smaller screens for better padding */
+    }
+
+    #profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Slightly smaller font for mobile readability */
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 1rem; /* Make button text slightly larger for touch devices */
+    }
+}
+
+/* Desktop-responsive adjustments */
+@media (min-width: 601px) {
+    .resume {
+        max-width: 700px; /* Slightly larger on bigger screens */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Larger heading for desktop */
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
